@@ -1,5 +1,7 @@
 # GD Homework
 
+[![Build Status](https://travis-ci.org/vojty/gd-homework.svg?branch=master)](https://travis-ci.org/vojty/gd-homework)
+
 * Default web server port: 9000
 * Default webpack server port: 9001
 
