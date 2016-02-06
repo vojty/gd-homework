@@ -1,5 +1,6 @@
 import boxWrap from '../utils/boxWrap';
 import Component from 'react-pure-render/component';
+import escapeStringRegexp from 'escape-string-regexp';
 import Note from './Note';
 import React, { PropTypes } from 'react';
 
@@ -19,7 +20,7 @@ export default class NotesList extends Component {
     if (!search) {
       return notes;
     }
-    const regexp = new RegExp(search, 'i');
+    const regexp = new RegExp(escapeStringRegexp(search), 'i');
     return notes.filter((note) => {
       if (regexp.test(note.text)) {
         return true;
